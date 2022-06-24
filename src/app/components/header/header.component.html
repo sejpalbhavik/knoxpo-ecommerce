@@ -1,0 +1,116 @@
+<header class="page-header uk-box-shadow-medium uk-background-default" uk-sticky>
+    <div class="uk-container uk-container-expand uk-height-1-1">
+      <nav class="uk-height-1-1" uk-navbar>
+        <a href="" class="uk-flex uk-flex-middle">
+          <img width="178" height="38" src="../../../assets/images/logo.png" alt="forecastr logo">
+        </a>
+
+        <div class="uk-navbar-left">
+
+          <ngx-skeleton-loader class="ngx_data" count="5" appearance="circle" animation="pulse" *ngIf="skeletonloader" [theme]="{ height: '20px',width: '50px'}"> </ngx-skeleton-loader>
+            <ul class="uk-navbar-nav uk-navbar-center uk-visible@l" *ngIf="!skeletonloader">
+                <li class="multi" *ngFor="let data of category_data">
+                  <a href="">
+                    {{data}}   
+                  </a> 
+                </li>
+              </ul>
+        </div>
+  
+        <div class="uk-navbar-right">
+                <div class="uk-navbar-item">
+                    <form action="javascript:void(0)">
+
+                        <div class="search_section">
+                            <a href="" uk-icon="icon: search" class="icon"></a>
+                            <input class="uk-input uk-form-width-large" type="text" placeholder="Search for products, brands and more">
+                        </div>
+                        
+                       
+                    </form>
+                </div>
+        </div>
+  
+        <div class="uk-navbar-right">
+          <button class="uk-icon-link uk-margin-right" uk-icon="cart" type="button" aria-label="Toggle Search Form" uk-toggle="target: #offcanvas-flip"></button>
+
+          <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+        
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+        
+                <h3>Your Cart</h3>
+        
+                <p>Your Cart is empty</p>
+        
+            </div>
+        </div>
+          <a href="#" class="uk-icon-link" uk-icon="user" aria-label="Open Wishlist Page" href="#modal-center" uk-toggle></a>
+
+          <div id="modal-center" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                <div class="uk-margin">
+                    <img src="../../../assets/images/login_header.webp" alt="login_header"/>
+                </div>
+        
+                <form>
+
+                    <div class="uk-margin">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon" uk-icon="icon: user"></span>
+                            <input class="uk-input" type="text" placeholder="enter email">
+                        </div>
+                    </div>
+                
+                    <div class="uk-margin">
+                        <div class="uk-inline">
+                            <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                            <input class="uk-input" type="password" placeholder="enter password">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <div class="uk-inline">
+                            <button class="uk-button uk-button-primary">Log In</button>
+                            <button class="uk-button uk-button-primary">Sign Up</button>
+                        </div>
+
+                        <p>Not an account? Create account</p>
+                    </div>
+                
+                </form>
+        
+            </div>
+        </div>
+          <button class="uk-margin-left uk-hidden@l" uk-toggle="target: #offcanvas" uk-icon="icon: menu" type="button" aria-label="Toggle Mobile Menu"></button>
+        </div>
+      </nav>
+    </div>
+  
+    <div class="offcanvas uk-hidden@l" id="offcanvas" uk-offcanvas="flip: true; overlay: true; mode: reveal">
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close aria-label="Close Mobile Menu"></button>
+        <ngx-skeleton-loader count="5" appearance="circle" animation="pulse" *ngIf="skeletonloader" [theme]="{ height: '20px',width: '20px'}"> </ngx-skeleton-loader>
+        <ul class="top-menu uk-nav uk-margin-top" *ngIf="!skeletonloader">
+          <li *ngFor="let data of category_data">
+            <a href="">
+              {{data}}
+            </a>
+   
+          </li>
+        </ul>
+
+        
+        
+
+         
+    
+  
+      </div>
+    </div>
+  </header>
+  
+  

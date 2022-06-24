@@ -1,0 +1,145 @@
+
+
+  .uk-table{
+    width: 100%;
+    height: 100%;
+  }
+
+  .heading{
+    width: 100%;
+    height: 100%;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    color: #282c3f;
+    background-color: transparent;
+
+  }
+
+  .app_store{
+    width: 100%;
+
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin-bottom: 0px;
+
+    .app_icon{
+        
+
+        width: 150px;
+       
+
+        margin-right: 10px;
+      
+
+        
+    }
+  }
+
+  .text-uppercase{
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    color: #282c3f;
+    background-color: transparent;
+    letter-spacing: 0.5px;
+  }
+
+  .new_icon{
+    padding: 0 5px;
+    background: red;
+    border-radius: 90px;
+    color: #fff;
+    font-weight: 900;
+    margin: 0 0 0 5px;
+    font-size: 12px;
+  }
+
+  .social_media_section{
+    width: 100%;
+    height: 100%;
+
+    padding-top: 20px;
+  }
+
+  .product_details{
+    width: 100%;
+
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .products_refund_details{
+
+        width: 50px;
+       
+
+        margin-right: 10px;
+    }
+
+    .product_refund_desc{
+        width: 100%;
+
+        .desc{
+            font-weight: 400;
+        }
+    }
+  }
+
+  @media screen and (max-width:590px) and (min-width:280px) {
+    .app_store{
+      width: 100%;
+  
+      
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+  
+      margin-bottom: 0px;
+  
+      .app_icon{
+          
+  
+         width: 100%;
+         
+  
+          margin-right: 10px;
+        
+  
+          
+      }
+    }
+
+    .product_details{
+      width: 100%;
+  
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      .products_refund_details{
+  
+          width: 50px;
+         
+  
+          margin-right: 10px;
+      }
+  
+      .product_refund_desc{
+          width: 100%;
+  
+          .desc{
+              font-weight: 400;
+          }
+      }
+    }
+}
