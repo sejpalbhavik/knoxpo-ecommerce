@@ -1,0 +1,4 @@
+[submodule "knoxpo-ecommerce"]
+
+    path = src/app
+    url = https://gitlab.com/k3457/knoxpo-ecommerce.git

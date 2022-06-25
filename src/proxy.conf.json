@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://fakestoreapi.com/products",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}
