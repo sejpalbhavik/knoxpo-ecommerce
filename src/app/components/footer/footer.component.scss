@@ -92,6 +92,58 @@
     }
   }
 
+  @media screen and (max-width:768px) and (min-width:590px) {
+    .app_store{
+      width: 100%;
+  
+      
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+  
+      margin-bottom: 0px;
+  
+      .app_icon{
+          
+  
+         width: 100%;
+         
+  
+          margin-right: 10px;
+        
+  
+          
+      }
+    }
+
+    .product_details{
+      width: 100%;
+  
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      .products_refund_details{
+  
+          width: 50px;
+         
+  
+          margin-right: 10px;
+      }
+  
+      .product_refund_desc{
+          width: 100%;
+  
+          .desc{
+              font-weight: 400;
+          }
+      }
+    }
+  }
+
   @media screen and (max-width:590px) and (min-width:280px) {
     .app_store{
       width: 100%;

@@ -125,9 +125,9 @@ html {
     .search_section{
         display: none;
     }
-}
+  }
 
-@media screen and (max-width:768px) and (min-width:590px) {
+  @media screen and (max-width:768px) and (min-width:590px) {
     .search_section{
         display: none;
     }
@@ -135,9 +135,9 @@ html {
     .ngx_data{
       display: none;
   }
-}
+  }
 
-@media screen and (max-width:590px) and (min-width:280px) {
+  @media screen and (max-width:590px) and (min-width:280px) {
     .search_section{
         display: none;
     }
@@ -145,7 +145,7 @@ html {
       .ngx_data{
         display: none;
     }
-}
+  }
   
 
    

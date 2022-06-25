@@ -240,5 +240,86 @@
     overflow: hidden;
 }
 
+@media screen and (max-width:1366px) and (min-width:768px) {
+    .uk-cover-container{
+        width: 250px;
+        max-height: auto;
+    
+        margin-left: 250px;
+      
+    
+        .card-image{
+            max-width: 100%;
+           max-height: 100%;
+        }
+    
+        .brand-image{
+            max-width: 100%;
+           max-height: 100%;
+        }
+    }
+  }
+
+  @media screen and (max-width:1536px) and (min-width:864px) {
+    .uk-cover-container{
+        width: 250px;
+        max-height: auto;
+    
+        margin-left: 100px;
+      
+    
+        .card-image{
+            max-width: 100%;
+           max-height: 100%;
+        }
+    
+        .brand-image{
+            max-width: 100%;
+           max-height: 100%;
+        }
+    }
+  }
+
+  @media screen and (max-width:768px) and (min-width:590px) {
+    .uk-cover-container{
+        width: 250px;
+        max-height: auto;
+    
+        margin-left: 150px;
+      
+    
+        .card-image{
+            max-width: 100%;
+           max-height: 100%;
+        }
+    
+        .brand-image{
+            max-width: 100%;
+           max-height: 100%;
+        }
+    }
+  }
+
+  @media screen and (max-width:590px) and (min-width:280px) {
+    .uk-cover-container{
+        width: 250px;
+        max-height: auto;
+    
+        margin-left: 120px;
+      
+    
+        .card-image{
+            max-width: 100%;
+           max-height: 100%;
+        }
+    
+        .brand-image{
+            max-width: 100%;
+           max-height: 100%;
+        }
+    }
+    
+  }
+
 
 
