@@ -1,4 +1,6 @@
+<app-header></app-header>
 
+<app-banner></app-banner>
   <!-- Page Content -->
       <div class="latest-products">
         <div class="container">
@@ -19,21 +21,32 @@
                     </select>
                 </div> -->
 
-                <button class="grid_details" type="button" name="view-filter" id="list-view"><i class="fa fa-list-ul"></i> List View</button>
+                <!-- <button class="grid_details" type="button" name="view-filter" id="list-view"><i class="fa fa-list-ul"></i> List View</button>
 
-                <button class="grid_details" type="button" name="view-filter" id="grid-view" ><i class="fa fa-th"></i> Grid View</button>
+                <button class="grid_details" type="button" name="view-filter" id="grid-view" ><i class="fa fa-th"></i> Grid View</button> -->
                 </div>
             </div>
           </div>
             <div class="col-sm-12"> 
                 <div class="row">
                   <ngx-skeleton-loader class="ngx_data" count="1" appearance="line" animation="pulse" *ngIf="skeletonloader" [theme]="{ height: '20px',width: '1500px'}"> </ngx-skeleton-loader>
-                      <div class="uk-child-width-1-4@l uk-child-width-1-2@m uk-grid-match" uk-grid *ngIf="!skeletonloader">  
-                        <div *ngFor="let data of datas">
-                            <div class="uk-card uk-card-default">
+                      <div class="uk-child-width-1-4@l uk-child-width-1-2@m uk-grid-match" uk-grid *ngIf="!skeletonloader" 
+                      uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200; repeat: true">  
+                        <div *ngFor="let data of datas" (click)="goProductDetails(data.id)">
+                            <div class="uk-card uk-card-default" (mouseover)="showButtons(true)" (mouseout)="showButtons(false)">
                                 <div class="uk-cover-container">
-                                  <canvas width="500" height="500"></canvas>
+                                  <div class="uk-text-center">
+                                  <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <canvas width="500" height="500"></canvas>
                                     <img src="{{data.image}}" alt="image" class="card-image" uk-cover>
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                      <div class="buy_section">
+                                        <!-- <button class="quick_buy" type="button"><fa-icon [icon]="faMessage" class="fa-icon"></fa-icon> Buy</button> -->
+                                        <button class="quick_buy" type="button"><fa-icon [icon]="faCartShopping" class="fa-icon"></fa-icon> Add to cart</button>
+                                      </div>
+                                  </div>
+                                  </div>
+                                 </div>
                                 </div>
                                 <div class="uk-card-body">
                                     <div class="price_section">
@@ -60,15 +73,7 @@
                                       </div>
                                         
                                       </div>
-                                      
-                                
                                     </div>
-
-                                    <!-- <div class="buy_section">
-                                      <button class="quick_buy" type="button"><fa-icon [icon]="faMessage" class="fa-icon"></fa-icon> Buy</button>
-                                      <button class="quick_buy" type="button"><fa-icon [icon]="faCartShopping" class="fa-icon"></fa-icon> Add to cart</button>
-                                    </div> -->
-                                    
                                   </div>
                               
                             </div>
@@ -93,7 +98,7 @@
 
             <div class="row">
               <div class="col-sm-12">
-                <div class="uk-child-width-1-5@l uk-child-width-1-2@m uk-grid-match" uk-grid>
+                <div class="uk-child-width-1-5@l uk-child-width-1-2@m uk-grid-match" uk-grid uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200; repeat: true">
                   <div>
                       <div class="uk-card uk-card-default">
                           <!-- <div class="uk-card-media-top">
@@ -163,7 +168,7 @@
 
             <div class="row">
               <div class="col-sm-12">
-                <div class="uk-child-width-1-5@l uk-child-width-1-2@m uk-grid-match" uk-grid>
+                <div class="uk-child-width-1-5@l uk-child-width-1-2@m uk-grid-match" uk-grid uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200; repeat: true">
                   <div>
                       <div class="uk-card uk-card-default">
                           <!-- <div class="uk-card-media-top">
@@ -221,5 +226,5 @@
         </div>
       </div>
 
-
+<app-footer></app-footer>
   

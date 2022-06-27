@@ -12,18 +12,30 @@ import { SingleProductComponent } from './components/single-product/single-produ
 import { WomensCategoryComponent } from './components/womens-category/womens-category.component';
 
 const routes: Routes = [
-//   {path: 'header', component: HeaderComponent},
-//   {path: 'login', component: LoginPageComponent, outlet: 'login'},
-//   {path: 'banner', component: BannerComponent},
-//   {path: '', component: HomePageComponent},
-//   {path: 'footer', component: FooterComponent},
+  // {path: 'header', component: HeaderComponent},
+  // {path: 'login', component: LoginPageComponent},
+  // {path: 'banner', component: BannerComponent},
+  {path: '', component: HomePageComponent, children:[
+    {
+      path: 'header', component: HeaderComponent,
+    },
+    {
+      path: 'banner', component: BannerComponent
+    },
+    {
+      path: 'footer', component: FooterComponent
+    },
+  ]
+},
 
 //   // Category Section
 
-//   {path: 'electronics', component: ElectronicsCategoryComponent},
-//   {path: 'jewellery', component: JewelleryCategoryComponent},
-//   {path: 'mens-catelog', component: MensCategoryComponent},
-//   {path: 'women-catelog', component: WomensCategoryComponent},
+  {path: `electronics`, component: ElectronicsCategoryComponent},
+  {path: `jewelery`, component: JewelleryCategoryComponent},
+  {path: `men's clothing`, component: MensCategoryComponent},
+  {path: `women's clothing`, component: WomensCategoryComponent},
+
+  {path: `single-product/:id`, component: SingleProductComponent},
   
 // // Category Section
 //   {path: 'categories', component: WomensCategoryComponent},

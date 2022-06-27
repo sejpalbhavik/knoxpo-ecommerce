@@ -25,6 +25,19 @@ html {
   .page-header .multi .uk-navbar-dropdown {
     padding: 0 25px;
   }
+
+  .page-header{
+    .multi{
+      .header_data{
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        padding: 0 25px;
+        cursor: pointer;
+        text-transform: capitalize;
+      }
+    }
+  }
   
   .page-header .uk-navbar-dropdown-nav .uk-nav-header {
     color: #7c2a8a;
@@ -93,6 +106,18 @@ html {
   .uk-offcanvas-bar{
    background-color: #f33f3f;
 
+   .heading{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 600;
+   }
+
+   .cart_desc{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+   }
+
    
   }
 
@@ -107,6 +132,25 @@ html {
     }
   }
 
+  .uk-icon-link{
+    position: relative;
+
+
+    .uk-badge{
+      position: absolute;
+      bottom: 10px;
+      left: 11px;
+
+      background-color: #f33f3f;
+      color: #fff;
+      font-weight: 600;
+
+    }
+  }
+
+  .uk-search-input{
+    width: 500px;
+  }
   
 
 

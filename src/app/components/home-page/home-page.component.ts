@@ -25,7 +25,10 @@ export class HomePageComponent implements OnInit {
   faStar = faStar;
   skeletonloader = true;
 
-  constructor(private fetchApi: FetchApiService, private router: Router) { }
+  showButton: boolean | undefined;
+
+  constructor(private fetchApi: FetchApiService, private router: Router) { 
+  }
 
   ngOnInit() {
 
@@ -38,8 +41,19 @@ export class HomePageComponent implements OnInit {
   
 }
 
+showButtons(show: boolean){
+  this.showButton = show;
+}
+
 showText() {
   this.isReadMore = !this.isReadMore
+}
+
+
+goProductDetails(id:number){
+
+  this.router.navigate(['/single-product',id]);
+  console.log("getData",id)
 }
 
 }

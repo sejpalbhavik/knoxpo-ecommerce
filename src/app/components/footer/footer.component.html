@@ -57,17 +57,8 @@
         <h5 class="text-uppercase">Online Shopping</h5>
 
         <ul class="list-unstyled">
-          <li>
-            <a href="#!">Electronics</a>
-          </li>
-          <li>
-            <a href="#!">Jewellery <span class="new_icon">New</span></a>
-          </li>
-          <li>
-            <a href="#!">Men</a>
-          </li>
-          <li>
-            <a href="#!">Women</a>
+          <li *ngFor="let data of category_data">
+            <button class="header_data" (click)="gotoPage(data)">{{data}}</button>
           </li>
         </ul>
 

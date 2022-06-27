@@ -1,9 +1,8 @@
  <!-- Banner Starts Here -->
 <div class="banner">
-  <div class="container">
     <div class="row">
         <div class="col-sm-12">
-            <div
+            <!-- <div
             class="uk-position-relative uk-visible-toggle uk-light"
             tabindex="-1"
             uk-slideshow
@@ -43,10 +42,31 @@
               uk-slidenav-next
               uk-slideshow-item="next"
             ></a>
-          </div>
+          </div> -->
+          
+          <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+            <ul class="uk-slideshow-items">
+                <li>
+                  <canvas width="2000" height="500"></canvas>
+                    <img src="../../../assets/images/slide_01.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="../../../assets/images/slide_02.jpg" alt="" uk-cover>
+                </li>
+                <li>
+                    <img src="../../../assets/images/slide_03.jpg" alt="" uk-cover>
+                </li>
+            </ul>
+        
+            <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        
+        </div>
+      
         </div>
     </div>
- </div>
+
 
 </div>
 

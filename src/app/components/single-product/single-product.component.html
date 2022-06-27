@@ -9,8 +9,8 @@
                     <div class="uk-card uk-card-default uk-card-body">
 
                         <div class="uk-cover-container">
-                            <canvas width="1000" height="1000"></canvas>
-                            <img src="../../../assets/images/product_01.jpg" uk-cover/>
+                            <!-- <canvas width="1000" height="1000"></canvas> -->
+                            <img src="{{datas.image}}" uk-cover/>
                         </div>
                     </div>
                 </div>
@@ -46,22 +46,22 @@
 
         <div class="col">
            <div class="product_heading">
-            <h3 class="product_name">HRX by Hrithik Roshan</h3>
+            <h3 class="product_name">{{datas.title}}</h3>
 
-                <p class="product_desc">Men Yellow Printed Cotton Pure Cotton T-shirt</p>
+                <p class="product_desc">{{datas.category}}</p>
 
                 <div class="product_review-top">
                     <div class="product_review-first">
-                        <h4 class="review_rate">4.3 <span class="fa-rate"><fa-icon [icon]="faStar"></fa-icon></span></h4>
+                        <h4 class="review_rate">{{datas.rating.rate}} <span class="fa-rate"><fa-icon [icon]="faStar"></fa-icon></span></h4>
                     </div>
                     <div class="product_review-second">
-                        <p class="review_rate_second">49.2k Ratings</p>
+                        <p class="review_rate_second">{{datas.rating.count}}k Ratings</p>
                     </div>
                 </div>
 
                 <div class="product-price-section">
                     <span class="product-price">
-                        <strong>$ 50.00</strong>
+                        <strong>$ {{datas.price}}</strong>
                     </span>
                 </div>
 
@@ -96,7 +96,7 @@
 
                 <div class="best_price_section">
                     <div class="best_price">
-                        <h4 class="price_heading">Best Price: <span class="price_details">$ 50.00</span></h4>
+                        <h4 class="price_heading">Best Price: <span class="price_details">$ {{datas.price}}</span></h4>
                     </div>
                 </div>
 
@@ -104,7 +104,7 @@
                 <div class="product_detail_section">
                     <div class="product_detail">
                         <h3 class="product_heading">Product Details </h3>
-                        <p class="prduct_desc">Keep this hip this season with the HRX Men's Athleisure T-shirt. This versatile T-shirt can be styled any way you like for the ultimate gym-to-street look.</p>
+                        <p class="prduct_desc">{{datas.description}}</p>
                     </div>
                 </div>
 
@@ -119,9 +119,9 @@
                             
                                 <div class="uk-card uk-card-default uk-card-body">
                                     <div class="rating_data">
-                                        <h3 class="rating_heading">4.3 <span class="fa-rate"><fa-icon [icon]="faStar"></fa-icon></span></h3> 
+                                        <h3 class="rating_heading">{{datas.rating.rate}} <span class="fa-rate"><fa-icon [icon]="faStar"></fa-icon></span></h3> 
     
-                                        <h3 class="rating_buyers">49.2k Verified Buyers</h3>
+                                        <h3 class="rating_buyers">{{datas.rating.count}}k Verified Buyers</h3>
                                     </div>
                                 </div>
                            

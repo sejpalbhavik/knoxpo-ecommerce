@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http'
 })
 export class FetchApiService {
 
+id: any
   constructor(private http: HttpClient) { }
 
   getProducts(){
@@ -17,7 +18,7 @@ getCategory(){
   return this.http.get('https://fakestoreapi.com/products/categories');
 }
 
-getSignal(){
-  return this.http.get('https://fakestoreapi.com/products/1');
-}
+// getSigalData(id:any){
+//   return this.http.get(`https://fakestoreapi.com/products/`);
+// }
 }

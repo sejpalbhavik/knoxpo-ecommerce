@@ -37,10 +37,11 @@ export class HeaderComponent implements OnInit {
   btnClick() {
 
     console.log("click",this.btnClick)
-    this.router.navigate(['/electronics']);
+    this.router.navigateByUrl('/electronics');
 }
 
-gotoLogin(pageName: string){
+gotoPage(pageName: string){
+  console.log("login",pageName)
     this.router.navigate([`${pageName}`])
 }
 

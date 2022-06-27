@@ -10,9 +10,11 @@
           <ngx-skeleton-loader class="ngx_data" count="5" appearance="circle" animation="pulse" *ngIf="skeletonloader" [theme]="{ height: '20px',width: '50px'}"> </ngx-skeleton-loader>
             <ul class="uk-navbar-nav uk-navbar-center uk-visible@l" *ngIf="!skeletonloader">
                 <li class="multi" *ngFor="let data of category_data">
-                  <a href="">
+                  <!-- <a href="">
                     {{data}}   
-                  </a> 
+                  </a>  -->
+
+                  <button class="header_data" (click)="gotoPage(data)">{{data}}</button>
                 </li>
               </ul>
         </div>
@@ -28,20 +30,27 @@
                         
                        
                     </form>
+<!-- 
+                    <form class="uk-search uk-search-default">
+                      <span uk-search-icon></span>
+                      <input class="uk-search-input" type="search" placeholder="Search for products, brands and more">
+                  </form> -->
                 </div>
         </div>
   
         <div class="uk-navbar-right">
-          <button class="uk-icon-link uk-margin-right" uk-icon="cart" type="button" aria-label="Toggle Search Form" uk-toggle="target: #offcanvas-flip"></button>
+          <button class="uk-icon-link uk-margin-right" uk-icon="cart" type="button" aria-label="Toggle Search Form" uk-toggle="target: #offcanvas-flip">
+            <span class="uk-badge">1</span>
+          </button>
 
           <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
             <div class="uk-offcanvas-bar">
         
                 <button class="uk-offcanvas-close" type="button" uk-close></button>
         
-                <h3>Your Cart</h3>
+                <h3 class="heading">Your Cart</h3>
         
-                <p>Your Cart is empty</p>
+                <p class="cart_desc">Your Cart is empty</p>
         
             </div>
         </div>
