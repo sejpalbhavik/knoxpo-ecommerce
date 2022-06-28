@@ -8,6 +8,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { JewelleryCategoryComponent } from './components/jewellery-category/jewellery-category.component';
 import { LoginPageComponent } from './components/login-page/login-page.component';
 import { MensCategoryComponent } from './components/mens-category/mens-category.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SingleProductComponent } from './components/single-product/single-product.component';
 import { WomensCategoryComponent } from './components/womens-category/womens-category.component';
 
@@ -36,6 +37,11 @@ const routes: Routes = [
   {path: `women's clothing`, component: WomensCategoryComponent},
 
   {path: `single-product/:id`, component: SingleProductComponent},
+
+  //sign up
+
+  {path: `sign-up`, component: SignUpComponent},
+  {path: `login`, component: LoginPageComponent}
   
 // // Category Section
 //   {path: 'categories', component: WomensCategoryComponent},

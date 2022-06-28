@@ -18,6 +18,13 @@
 
                         <div class="uk-margin">
                             <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                <input class="uk-input" type="text" placeholder="First and last name">
+                            </div>
+                        </div>
+
+                        <div class="uk-margin">
+                            <div class="uk-inline">
                                 <span class="uk-form-icon" uk-icon="icon: mail"></span>
                                 <input class="uk-input" type="email" placeholder="enter email">
                             </div>
@@ -25,15 +32,22 @@
 
                         <div class="uk-margin">
                             <div class="uk-inline">
-                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
-                                <input class="uk-input" type="password" placeholder="enter password">
+                                <span class="uk-form-icon" uk-icon="icon: phone"></span>
+                                <input class="uk-input" type="number" placeholder="enter phone">
                             </div>
                         </div>
                 
                         <div class="uk-margin">
-                            <p class="forgot">Forgot Password</p>
-                            <button class="sign-in-button">Log In</button>
-                          </div>
+                            <div class="uk-inline">
+                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                <input class="uk-input" type="password" placeholder="At least 6 characters">
+                            </div>
+                            <p>Already have an account? <button class="sign-in-button" (click)="gotoPage()">Sign In</button></p>
+                        </div>
+
+                        <div class="uk-margin">
+                            <button class="uk-button uk-button-primary" (click)="gotoPage()">Create an account</button>
+                        </div>
                     </div>
               
                 </div>
@@ -47,3 +61,6 @@
 <div class="footer">
     <app-footer></app-footer>
 </div>
+
+
+

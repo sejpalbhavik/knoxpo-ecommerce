@@ -13,7 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ElectronicsCategoryComponent } from './components/electronics-category/electronics-category.component';
 import { JewelleryCategoryComponent } from './components/jewellery-category/jewellery-category.component';
 import { MensCategoryComponent } from './components/mens-category/mens-category.component';

@@ -14,6 +14,7 @@ export class HeaderComponent implements OnInit {
   skeletonloader = true;
 
   category_data: any;
+  sigal_data: any;
   popup = false
   name = 'Angular';
 
@@ -31,18 +32,25 @@ export class HeaderComponent implements OnInit {
       console.log("header_data",this.category_data)
       this.skeletonloader = false;
     },error => console.error(error));
-  } 
-  
 
-  btnClick() {
-
-    console.log("click",this.btnClick)
-    this.router.navigateByUrl('/electronics');
+    this.fetchApi.getSigalProduct().subscribe((data)=>{       
+      this.sigal_data = data;
+  })
 }
+
+//   btnClick() {
+
+//     console.log("click",this.btnClick)
+//     this.router.navigateByUrl('/electronics');
+// }
 
 gotoPage(pageName: string){
   console.log("login",pageName)
     this.router.navigate([`${pageName}`])
+}
+
+gotoSignUp(){
+  this.router.navigateByUrl('/sign-up')
 }
 
 }

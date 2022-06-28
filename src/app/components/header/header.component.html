@@ -51,6 +51,10 @@
                 <h3 class="heading">Your Cart</h3>
         
                 <p class="cart_desc">Your Cart is empty</p>
+
+                <!-- <h4>{{data.title}}</h4>
+
+                <p>{{data.description}}</p> -->
         
             </div>
         </div>
@@ -84,10 +88,8 @@
                     <div class="uk-margin">
                         <div class="uk-inline">
                             <button class="uk-button uk-button-primary">Log In</button>
-                            <button class="uk-button uk-button-primary">Sign Up</button>
+                            <button class="uk-button uk-button-primary" (click)="gotoSignUp()">Sign Up</button>
                         </div>
-
-                        <p>Not an account? Create account</p>
                     </div>
                 
                 </form>

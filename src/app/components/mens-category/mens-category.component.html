@@ -1,1 +1,231 @@
-<p>mens-category works!</p>
+<app-header></app-header>
+
+<!-- <app-banner></app-banner> -->
+<div class="latest-products">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="section-heading">
+
+            <div class="heading">
+              <h2>Latest Products</h2>
+            </div>
+            <div class="dropdown">
+
+              <!-- <div class="uk-form-select" data-uk-form-select>
+                <span></span>
+                <select>
+                    <option value="">Grid View</option>
+                    <option value="">List View</option>
+                </select>
+            </div> -->
+
+            <!-- <button class="grid_details" type="button" name="view-filter" id="list-view"><i class="fa fa-list-ul"></i> List View</button>
+
+            <button class="grid_details" type="button" name="view-filter" id="grid-view" ><i class="fa fa-th"></i> Grid View</button> -->
+            </div>
+        </div>
+      </div>
+        <div class="col-sm-12"> 
+            <div class="row">
+              <ngx-skeleton-loader class="ngx_data" count="1" appearance="line" animation="pulse" *ngIf="skeletonloader" [theme]="{ height: '20px',width: '1500px'}"> </ngx-skeleton-loader>
+                  <div class="uk-child-width-1-4@l uk-child-width-1-2@m uk-grid-match" uk-grid *ngIf="!skeletonloader" 
+                  uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200; repeat: true">  
+                    <div *ngFor="let data of datas" (click)="goProductDetails(data.id)">
+                        <div class="uk-card uk-card-default" (mouseover)="showButtons(true)" (mouseout)="showButtons(false)">
+                            <div class="uk-cover-container">
+                              <div class="uk-text-center">
+                              <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                <canvas width="500" height="500"></canvas>
+                                <img src="{{data.image}}" alt="image" class="card-image" uk-cover>
+                                <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-default">
+                                  <div class="buy_section">
+                                    <!-- <button class="quick_buy" type="button"><fa-icon [icon]="faMessage" class="fa-icon"></fa-icon> Buy</button> -->
+                                    <button class="quick_buy" type="button"><fa-icon [icon]="faCartShopping" class="fa-icon"></fa-icon> Add to cart</button>
+                                  </div>
+                              </div>
+                              </div>
+                             </div>
+                            </div>
+                            <div class="uk-card-body">
+                                <div class="price_section">
+                                  <h3 class="uk-card-title">{{data.title}}</h3>
+                                  <!-- <div [ngClass]="{'limitTextHeight': isReadMore}">
+                                    <p>{{data.description}}</p>
+                                  </div>
+
+                                    <button type="button" (click)="showText()">
+                                      {{ isReadMore ? 'Read More': 'Read Less' }}
+                                    </button> -->
+
+                                    <!-- <p class="uk-card-desc">{{data.description}}</p> -->
+                                  <h3 class="uk-card-title-price">$ {{data.price}}</h3>
+                                    
+                                  <div class="rating">
+
+                                    <div class="rating-first">
+                                      <h4 class="review_rate">{{data.rating.rate}} <span class="fa-rate"><fa-icon [icon]="faStar"></fa-icon></span></h4>
+                                    </div>
+
+                                    <div class="rating_second">
+                                      <p class="review_rate_second">{{data.rating.count}}k Ratings</p>
+                                  </div>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="best-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2 class="top_header">Top Brands on <em>Offer</em></h2>
+          </div>
+        </div>
+      
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="uk-child-width-1-5@l uk-child-width-1-2@m uk-grid-match" uk-grid uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200; repeat: true">
+              <div>
+                  <div class="uk-card uk-card-default">
+                      <!-- <div class="uk-card-media-top">
+                          <img src="../../../assets/images/men.webp" width="1800" height="1200" alt="">
+                      </div> -->
+
+                      <div class="uk-cover-container">
+                        <canvas width="500" height="700"></canvas>
+                        <img src="../../../assets/images/top_brands_1.webp" class="brand-image" alt="" uk-cover>
+                    </div>
+                  </div>
+              </div>
+
+              <div>
+                <div class="uk-card uk-card-default">
+                  <div class="uk-cover-container">
+                    <canvas width="500" height="700"></canvas>
+                    <img src="../../../assets/images/top_brands_2.webp" class="brand-image" alt="" uk-cover>
+                </div>
+                </div>
+            </div>
+
+            <div>
+              <div class="uk-card uk-card-default">
+                <div class="uk-cover-container">
+                  <canvas width="500" height="700"></canvas>
+                  <img src="../../../assets/images/top_brands_3.webp" class="brand-image" alt="" uk-cover>
+              </div>
+              </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default">
+              <div class="uk-cover-container">
+                <canvas width="500" height="700"></canvas>
+                <img src="../../../assets/images/top_brands_4.webp" class="brand-image" alt="" uk-cover>
+              </div>
+            </div>
+        </div>
+
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-cover-container">
+              <canvas width="500" height="700"></canvas>
+              <img src="../../../assets/images/top_brands_5.webp" class="brand-image" alt="" uk-cover>
+          </div>
+          </div>
+      </div>
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="best-features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2 class="top_header">Most Loved <em>Brands</em></h2>
+          </div>
+        </div>
+      
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="uk-child-width-1-5@l uk-child-width-1-2@m uk-grid-match" uk-grid uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200; repeat: true">
+              <div>
+                  <div class="uk-card uk-card-default">
+                      <!-- <div class="uk-card-media-top">
+                          <img src="../../../assets/images/men.webp" width="1800" height="1200" alt="">
+                      </div> -->
+
+                      <div class="uk-cover-container">
+                        <canvas width="500" height="700"></canvas>
+                        <img src="../../../assets/images/Brand_1.webp" class="brand-image" alt="" uk-cover>
+                    </div>
+                  </div>
+              </div>
+
+              <div>
+                <div class="uk-card uk-card-default">
+                  <div class="uk-cover-container">
+                    <canvas width="500" height="700"></canvas>
+                    <img src="../../../assets/images/Brand_2.webp" class="brand-image" alt="" uk-cover>
+                </div>
+                </div>
+            </div>
+
+            <div>
+              <div class="uk-card uk-card-default">
+                <div class="uk-cover-container">
+                  <canvas width="500" height="700"></canvas>
+                  <img src="../../../assets/images/Brand_3.webp" class="brand-image" alt="" uk-cover>
+              </div>
+              </div>
+          </div>
+
+          <div>
+            <div class="uk-card uk-card-default">
+              <div class="uk-cover-container">
+                <canvas width="500" height="700"></canvas>
+                <img src="../../../assets/images/Brand_4.webp" class="brand-image" alt="" uk-cover>
+              </div>
+            </div>
+        </div>
+
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-cover-container">
+              <canvas width="500" height="700"></canvas>
+              <img src="../../../assets/images/Brand_5.webp" class="brand-image" alt="" uk-cover>
+          </div>
+          </div>
+      </div>
+          </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>
+
+
+
+

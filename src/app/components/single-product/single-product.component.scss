@@ -10,6 +10,13 @@
     }
 }
 
+.uk-panel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 // .uk-grid-small{
 //     margin-top: 20px;
 // }
@@ -485,10 +492,14 @@
                     }
 
             @media screen and (max-width:1366px) and (min-width:768px) {
+
+                
                        
-                      }
+            }
                     
             @media screen and (max-width:1536px) and (min-width:864px) {
+
+                
                        
                       }
                     
@@ -524,12 +535,581 @@
                     .product_name{
                         text-align: center;
                     }
+
+                    .size-container{
+                        
+
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                    
+                        .size{
+                            // display: inline-block;
+                            font-size: 16px;
+                            // margin-bottom: 10px;
+                            font-weight: 500;
+                            text-align: center;
+                            
+                        }
+                    
+                        .size_button{
+                            
+                            background-color: #fff;
+                            border: 1px solid #bfc0c6;
+                            border-radius: 50px;
+                            padding: 0;
+                            min-width: 50px;
+                            height: 50px;
+                            text-align: center;
+                            cursor: pointer;
+                            color: #282c3f;
+                            margin-right: 10px;
+                    
+                            &:hover{
+                                border: 1px solid #ff3e6c;
+                            }
+                    
+                        }
+
+                        .buy_now{
+                            padding: 0;
+                            width: 60%;
+                        
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                        
+                            margin-top: 20px;
+                        
+                            .cart_button{
+                                font-weight: 500;
+                                cursor: pointer;
+                                background-color: #ff3e6c;
+                                border: 1px solid #ff3e6c;
+                                color: #fff;
+                                -webkit-box-flex: 3;
+                                -ms-flex: 3;
+                                flex: 3;
+                                text-align: center;
+                                width: 100%;
+                                // margin-right: 3%;
+                                margin-right: 10px;
+                                padding: 10px;
+                        
+                                text-transform: uppercase;
+                        
+                                .fa-icon{
+                                    margin-right: 10px;
+                                }
+                            }
+                        
+                        }
+
+                        .meta_info{
+ 
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                    
+                            margin-top: 20px;
+                    
+                            margin-bottom: 10px;
+                    
+                            border-bottom: 1px solid #d4d5d9;
+                            width: 100%;
+                    
+                            .meta_details{
+                                // display: inline-block;
+                                width: 100%;
+                                vertical-align: top;
+                    
+                                color: #282c3f;
+                                font-size: 16px;
+                    
+                                margin: 5px 0px;
+                                text-align: center;
+                              }
+                            }
+                    }
+
+                    .best_price_section{
+                        width: 100%;
+                        height: 100%;
+            
+                        margin-top: 20px;
+            
+                        .best_price{
+                            margin: 0px;
+            
+                            .price_heading{
+                                color: #282c3f;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                font-weight: 600;
+                                font-size: 18px;
+            
+                                .price_details{
+                                    color: #ff905a;
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    text-align: center;
+                                  }
+            
+                             
+                                }
+                            }
+                        }
+
+                        .rating_section{
+                            width: 100%;
+                            height: 100%;
+        
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+        
+                            .rating_details{
+                                margin: 0px;
+                            }
+        
+                            .rating_heading{
+                                color: #282c3f;
+                                font-size: 20px;
+                                font-weight: 600;
+                                margin: 0px;
+        
+                                .fa-rate{
+                                    color: #03a685;
+                                    margin-left: 1px;
+                                    
+                                }
+          
+                            }
+        
+                           .rating_divider{
+                            width: 100%;
+                            height: 100%;
+        
+                            margin-top: 30px;
+        
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+        
+                            .uk-card{
+                                width: 300px;
+        
+                            }
+                            .uk-card-default{
+                                box-shadow: none !important;
+                            }
+        
+                            .rating_data{
+                                width: 100%;
+                                height: 100%;
+        
+        
+                                .rating_heading{
+                                    font-size: 40px;
+                                    color: #282c3f;
+                                    font-weight: 200;
+                                    padding: 10px;
+                                   
+            
+                                    .rating_stars{
+                                        width: 24px !important;
+                                        height: 24px !important;
+                                    }
+                                    }
+        
+                                    .rating_buyers{
+                                        margin-top: 12px;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: #282c3f;
+                                    }
+                            }
+                            .rating_detail_section{
+                                display: flex;
+        
+                                .index_rating{
+        
+                                    display: flex;
+                                    font-size: 14px;
+                                    color: #a9abb3;
+        
+                                    progress[data-rating="5"]{
+                                        background: #14958f;
+                                    }
+        
+                                    progress[data-rating="4"]{
+                                        background: #14958f;
+                                    }
+        
+                                    progress[data-rating="3"]{
+                                        background: #72bfbc;
+                                    }
+        
+                                    progress[data-rating="2"]{
+                                        background: #fcb301;
+                                    }
+        
+                                    progress[data-rating="1"]{
+                                        background: #f16565;
+                                    }
+        
+                                    progress{
+                                        border: none;
+                                        margin-top: 6px;
+                                        width: 120px;
+                                        height: 4px;
+                                        background: #f5f5f6;
+                                        margin-right: 5px;
+                                    }
+        
+                                    .index_ratinglevel{
+                                        font-size: 14px;
+                                        color: #a9abb3;
+                                        margin-right: 5px;
+                                      }
+        
+                                      .index_ratinglevel-icon{
+                                        font-size: 14px;
+                                        color: #a9abb3;
+                                        margin-right: 5px;
+        
+                                        .fa_rated{
+                                            margin-right: 5px;
+                                        }
+                                        
+                                      }
+        
+                                      .index-count{
+                                        font-size: 12px;
+                                        color: #282c3f;
+                                        margin-left: 9px;
+                                      }
+                                      }
+                                    }
+                                }
+                            }
+                    
                 }
             }
                     
             @media screen and (max-width:590px) and (min-width:280px) {
+
+                .uk-cover-container{
+                    // width: 100%;
+                    // height: 100%;
+                    cursor: pointer;
+                
+                    width: 500px;
+                    height: 500px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                
+                    
+                    .img{
                         
-                      }
+                       width: 100%;
+                       height: 100%;
+                    }
+                    
+                }
+
+                .product_heading{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center ;
+
+                    .product_name{
+                        text-align: center;
+                    }
+
+                    .size-container{
+                        
+
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                    
+                        .size{
+                            // display: inline-block;
+                            font-size: 16px;
+                            // margin-bottom: 10px;
+                            font-weight: 500;
+                            text-align: center;
+                            
+                        }
+                    
+                        .size_button{
+                            
+                            background-color: #fff;
+                            border: 1px solid #bfc0c6;
+                            border-radius: 50px;
+                            padding: 0;
+                            min-width: 50px;
+                            height: 50px;
+                            text-align: center;
+                            cursor: pointer;
+                            color: #282c3f;
+                            margin-right: 10px;
+                    
+                            &:hover{
+                                border: 1px solid #ff3e6c;
+                            }
+                    
+                        }
+
+                        .buy_now{
+                            padding: 0;
+                            width: 60%;
+                        
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                        
+                            margin-top: 20px;
+                        
+                            .cart_button{
+                                font-weight: 500;
+                                cursor: pointer;
+                                background-color: #ff3e6c;
+                                border: 1px solid #ff3e6c;
+                                color: #fff;
+                                -webkit-box-flex: 3;
+                                -ms-flex: 3;
+                                flex: 3;
+                                text-align: center;
+                                width: 100%;
+                                // margin-right: 3%;
+                                margin-right: 10px;
+                                padding: 10px;
+                        
+                                text-transform: uppercase;
+                        
+                                .fa-icon{
+                                    margin-right: 10px;
+                                }
+                            }
+                        
+                        }
+
+                        .meta_info{
+ 
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                    
+                            margin-top: 20px;
+                    
+                            margin-bottom: 10px;
+                    
+                            border-bottom: 1px solid #d4d5d9;
+                            width: 100%;
+                    
+                            .meta_details{
+                                // display: inline-block;
+                                width: 100%;
+                                vertical-align: top;
+                    
+                                color: #282c3f;
+                                font-size: 16px;
+                    
+                                margin: 5px 0px;
+                                text-align: center;
+                              }
+                            }
+                    }
+
+                    .best_price_section{
+                        width: 100%;
+                        height: 100%;
+            
+                        margin-top: 20px;
+            
+                        .best_price{
+                            margin: 0px;
+            
+                            .price_heading{
+                                color: #282c3f;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                font-weight: 600;
+                                font-size: 18px;
+            
+                                .price_details{
+                                    color: #ff905a;
+                                    font-weight: 600;
+                                    font-size: 18px;
+                                    text-align: center;
+                                  }
+            
+                             
+                                }
+                            }
+                        }
+
+                        .rating_section{
+                            width: 100%;
+                            height: 100%;
+        
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+        
+                            .rating_details{
+                                margin: 0px;
+                            }
+        
+                            .rating_heading{
+                                color: #282c3f;
+                                font-size: 20px;
+                                font-weight: 600;
+                                margin: 0px;
+        
+                                .fa-rate{
+                                    color: #03a685;
+                                    margin-left: 1px;
+                                    
+                                }
+          
+                            }
+        
+                           .rating_divider{
+                            width: 100%;
+                            height: 100%;
+        
+                            margin-top: 30px;
+        
+                            display: flex;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+        
+                            .uk-card{
+                                width: 300px;
+        
+                            }
+                            .uk-card-default{
+                                box-shadow: none !important;
+                            }
+        
+                            .rating_data{
+                                width: 100%;
+                                height: 100%;
+        
+        
+                                .rating_heading{
+                                    font-size: 40px;
+                                    color: #282c3f;
+                                    font-weight: 200;
+                                    padding: 10px;
+                                   
+            
+                                    .rating_stars{
+                                        width: 24px !important;
+                                        height: 24px !important;
+                                    }
+                                    }
+        
+                                    .rating_buyers{
+                                        margin-top: 12px;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: #282c3f;
+                                    }
+                            }
+                            .rating_detail_section{
+                                display: flex;
+        
+                                .index_rating{
+        
+                                    display: flex;
+                                    font-size: 14px;
+                                    color: #a9abb3;
+        
+                                    progress[data-rating="5"]{
+                                        background: #14958f;
+                                    }
+        
+                                    progress[data-rating="4"]{
+                                        background: #14958f;
+                                    }
+        
+                                    progress[data-rating="3"]{
+                                        background: #72bfbc;
+                                    }
+        
+                                    progress[data-rating="2"]{
+                                        background: #fcb301;
+                                    }
+        
+                                    progress[data-rating="1"]{
+                                        background: #f16565;
+                                    }
+        
+                                    progress{
+                                        border: none;
+                                        margin-top: 6px;
+                                        width: 120px;
+                                        height: 4px;
+                                        background: #f5f5f6;
+                                        margin-right: 5px;
+                                    }
+        
+                                    .index_ratinglevel{
+                                        font-size: 14px;
+                                        color: #a9abb3;
+                                        margin-right: 5px;
+                                      }
+        
+                                      .index_ratinglevel-icon{
+                                        font-size: 14px;
+                                        color: #a9abb3;
+                                        margin-right: 5px;
+        
+                                        .fa_rated{
+                                            margin-right: 5px;
+                                        }
+                                        
+                                      }
+        
+                                      .index-count{
+                                        font-size: 12px;
+                                        color: #282c3f;
+                                        margin-left: 9px;
+                                      }
+                                      }
+                                    }
+                                }
+                            }
+                    
+                }
+
+                
+                        
+            }
 
 
 

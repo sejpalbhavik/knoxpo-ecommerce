@@ -26,21 +26,11 @@
             }
 
             .sign-in-button{
-                margin-right: 10px;
-                background-color: #f33f3f;
-                color: white;
-                padding: 15px;
+                background-color: Transparent;
+                background-repeat:no-repeat;
                 border: none;
-
-                width: 150px;
-            }
-
-            .forgot{
-                color: #f33f3f;
-                font-size: 15px;
-                font-weight: 600;
-                text-align: center;
                 cursor: pointer;
+                color: #f33f3f;
             }
         }
 

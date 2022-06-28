@@ -29,6 +29,8 @@
           </div>
             <div class="col-sm-12"> 
                 <div class="row">
+
+                  
                   <ngx-skeleton-loader class="ngx_data" count="1" appearance="line" animation="pulse" *ngIf="skeletonloader" [theme]="{ height: '20px',width: '1500px'}"> </ngx-skeleton-loader>
                       <div class="uk-child-width-1-4@l uk-child-width-1-2@m uk-grid-match" uk-grid *ngIf="!skeletonloader" 
                       uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 200; repeat: true">  
